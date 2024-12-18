@@ -33,6 +33,7 @@ chmod +x install.sh
 ```bash
 export PATH="$(pwd)/miniconda3/bin:$PATH"
 conda init
+conda activate
 ```
 
 4. Configure .env file:
