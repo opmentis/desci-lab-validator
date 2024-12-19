@@ -1,6 +1,6 @@
 from opmentis import register_user
 
-# Register as a miner
+# Register as a validator
 wallet_address = "wallet_address"
 labid = "dbc00e29-721f-40e6-b073-ec627db90115"
 role_type = "validator"
