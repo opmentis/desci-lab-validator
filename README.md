@@ -11,8 +11,9 @@ Validator is a component of the OpMentis decentralized protein structure predict
 
 ## Requirements
 
+- 20,000 $OPM tokens
 - Python 3.8+
-- CUDA-compatible GPU (optional but recommended)
+- CUDA-compatible GPU (recommended)
 - 16GB+ RAM
 - 30GB+ disk space for model parameters
 
