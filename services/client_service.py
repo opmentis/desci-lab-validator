@@ -39,6 +39,10 @@ class ClientService:
                 f"{self.api_url}/validators/next",
                 params={"wallet_address": wallet_address}
             ) as response:
+                if response.status == 429:
+                    logger.warning(f"Cooldown Activity: {await response.text()}")
+                    return None
+                    
                 if response.status == 200:
                     return await response.json()
                 return None
