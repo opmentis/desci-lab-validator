@@ -41,12 +41,13 @@ class ValidatorService:
                     logger.warning("Sorry, your are not registered as a Validator.")
                     logger.info("Shutting down validator gracefully...")
                     sys.exit(0)
-
-                logger.info(f"Got task: {task['task_id']}")
+                
                 if not task:
                     logger.info("No tasks available")
                     continue
-
+                    
+                logger.info(f"Got task: {task['task_id']}")
+                
                 await self.client_service.update_task_status(task['task_id'], wallet_address, 'pending')
 
                 # Get MSA results
