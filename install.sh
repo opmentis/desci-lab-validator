@@ -64,4 +64,7 @@ gpus = tf.config.list_physical_devices('GPU')
 print('TensorFlow GPU(s):', gpus)
 "
 
+python -m pip uninstall -y jax jaxlib
+python -m pip install jax[cuda12] 
+
 echo "Installation complete!"
